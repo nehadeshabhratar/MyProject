@@ -24,8 +24,7 @@ h1{
 			position:relative;
 			margin-bottom:0px;
 			margin-top:0px;
-			
-			}
+}
 .navi ul{
             display: inline-flex;
             background-color:orchid;
@@ -34,8 +33,7 @@ h1{
 			height:18px;
 			text-align: center;
 			position:relative;
-			margin-top:0px;
-           
+			margin-top:0px;    
         }
         .navi ul li{
             list-style: none;
@@ -69,7 +67,7 @@ h2{
 <li>ResetPassword</li>
 <li>RequestBlood</li>
 <li>SearchBlood</li>
-<li>>checkstock</li>
+<li>checkstock</li>
 <li>Logout</li>
 </ul>
         </div>

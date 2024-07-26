@@ -123,7 +123,7 @@ h1{
 	</div>
 <div class ="container">
 	<div class="main">
-		<form>
+		<form action="save" method="post" >
 			<h2>BloodBank |Resistration Form</h2>
 
 			<table>

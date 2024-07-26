@@ -3,9 +3,13 @@ package com.softronix.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.softronix.entity.Resister;
 
 @Controller
 public class HelloController {
+	private Object service;
 	@RequestMapping(value="index",method=RequestMethod.GET)
 	public String index()
 	{
@@ -146,6 +150,20 @@ public class HelloController {
 	{
 		return "healthupdatedonor";
 	}
-
+	@RequestMapping(value="save",method=RequestMethod.POST)
+	public String save(@RequestParam String email,@RequestParam String password,@RequestParam String retypepassword,@RequestParam String role)
+	{
+	  Resister pro=new Resister();
+	  Resister p=new Resister();
+	  pro.setEmail(email);
+	  pro.setPassword(password);
+	  pro.setRetypepassword(retypepassword);
+	  pro.setRole(role);
+	  
+	 p=service.savePro(pro);
+	}
 	
 }
+
+	
+
